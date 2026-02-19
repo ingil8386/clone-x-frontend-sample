@@ -1,9 +1,22 @@
 <template>
   <div>
-    <input type="text" :placeholder="'Email'" v-model="text">
-     <input type="password" :placeholder="'Password'" v-model="password">
+     <InputField
+      :type="'text'"
+      :placeholder="'Email'" 
+      :modelValue="email"
+      v-model="email"
+    />
+
+    <InputField
+      :type="'password'"
+      :placeholder="'Password'" 
+      :modelValue="password"
+        v-model="password"
+    />
+
+
+     <button @click="login">로그인하기</button>
   </div>
-<button @click="login">로그인하기</button>
 
 <div>
     계정이 없으신가요?
@@ -12,12 +25,14 @@
 </template>
 
 <script>
+import InputField from '@/components/InputField.vue';
 export default {
     name:"LoginPage",
+    components:{ InputField},
     data(){
         return {
-            email:"",
-            password:"",
+            email: "",
+            password: "",
         };
     },
     methods: {
