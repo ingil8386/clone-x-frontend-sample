@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <input :type="type" :placeholder="placeholder" :value="modelValue" @input="updateValue"/>
+  <div class="container">
+    <input class="input-form" :type="type" :placeholder="placeholder" :value="modelValue" @input="updateValue"/>
   </div>
 </template>
 
@@ -23,6 +23,20 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.container{
+    height: fit-content;
+    widows: 300px;
 
+
+}
+
+
+.input-form{
+    box-sizing:  border-box;
+    width: 100px;
+    padding: 10px;
+    border-radius:  5px;
+
+}
 </style>

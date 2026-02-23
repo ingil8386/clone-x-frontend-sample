@@ -1,15 +1,16 @@
 <template>
   <div class="container">
-  <LoginPage></LoginPage>
+    <!-- <router-link to="/demo">데모페이지로이동</router-link> -->
+    <router-view/>
   </div>
 
 </template>
 
 <script>
-import LoginPage from './views/LoginPage.vue';
+
 export default {
   name: "App",
-  components : { LoginPage},
+
 
 }
 </script>
@@ -27,4 +28,25 @@ body{
   justify-content: center;
   align-items: center;
 }
+
+.logo-container{
+
+}
+
+.logo {
+   max-width: 60px;
+   height:  auto;
+}
+
+.button{
+      border-radius: 20px;
+    border: 1px solid white;
+    font-size: 15px;
+    font-weight:  bold;
+    margin : 10px 0px;
+    padding: 10px;
+    width : 100%;
+    cursor : pointer;
+}
 </style>
+
