@@ -43,6 +43,7 @@ export default {
     methods: {
         login(){
             console(this.email, this.password);
+            this.$router.push('/main');
         },
     },
 };
