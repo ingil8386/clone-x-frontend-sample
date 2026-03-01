@@ -39,7 +39,7 @@ body{
 }
 
 .button{
-      border-radius: 20px;
+    border-radius: 20px;
     border: 1px solid white;
     font-size: 15px;
     font-weight:  bold;
@@ -48,5 +48,22 @@ body{
     width : 100%;
     cursor : pointer;
 }
+
+.error-message{
+  color: red;
+  font-size: small;
+  width: 100%;
+}
+
+.success-message{
+    color: green;
+    font-size: 12px;
+}
+
+.error-message{
+    color: red;
+    font-size: 12px;
+}
+
 </style>
 
