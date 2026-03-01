@@ -2,7 +2,7 @@
   <div class="container">TweetBar
     <div>
       <input type="text" placeholder="'what' up good, user?" class="input-form"/>
-        <image src = "@/assets/search.png" class="search-icon"></image>
+      <img src = "@/assets/search.png" class="search-icon"/>
     </div>
   </div>
 </template>
