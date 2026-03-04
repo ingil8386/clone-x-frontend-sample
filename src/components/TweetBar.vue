@@ -1,9 +1,7 @@
 <template>
-  <div class="container">TweetBar
-    <div>
+  <div class="container">
       <input type="text" placeholder="'what' up good, user?" class="input-form"/>
       <img src = "@/assets/search.png" class="search-icon"/>
-    </div>
   </div>
 </template>
 
@@ -16,7 +14,7 @@ export default {
 </script>
 
 <style scope>
-.containerP{
+.container{
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -40,7 +38,7 @@ export default {
   box-sizing: border-box;
   width: 40px;
   height: 100%;
-  border : 1px solid white;
+  background-color: white;
   border-radius: 20px;
   position: absolute;
   right: 0px;
